@@ -8,5 +8,11 @@ public class bill {
         Double bill_price = sc.nextDouble();
 
         System.out.println("Amount: " + bill_price);
+
+        if(bill_price > 50) {
+            bill_price = bill_price - (bill_price * 0.05);
+        }
+
+        System.out.println("Amount after discount: " + bill_price);
     }
 }
